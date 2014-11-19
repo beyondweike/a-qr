@@ -1,6 +1,7 @@
 package wwk.common.qr;
 
 import wwk.common.widget.CustomDialog;
+import android.annotation.SuppressLint;
 import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
@@ -15,6 +16,7 @@ import com.mining.app.zxing.decoding.CaptureActivityHandler;
 
 public class QrActivity extends MipcaActivityCapture
 {	
+	@SuppressLint("NewApi")
 	protected void onResultHandler(String resultString, Bitmap bitmap)
 	{
 		if(TextUtils.isEmpty(resultString))
